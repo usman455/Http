@@ -56,7 +56,6 @@ class _MyAppState extends State<MyApp> {
   }
 }*/
 import 'package:flutter/material.dart';
-
 import 'display_post.dart';
 void main(){
   return runApp(MyApp());

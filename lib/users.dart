@@ -1,6 +1,3 @@
-// To parse this JSON data, do
-//
-//     final post = postFromJson(jsonString);
 import 'dart:convert';
 Post postFromJson(String str) => Post.fromJson(json.decode(str));
 String postToJson(Post data) => json.encode(data.toJson());
@@ -31,11 +28,9 @@ class DataModal {
     this.name,
     this.code,
   });
-
   int id;
   String name;
   String code;
-
   factory DataModal.fromJson(Map<String, dynamic> json) => DataModal(
     id: json["id"],
     name: json["name"],
